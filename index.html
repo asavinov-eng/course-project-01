@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/course-project-01/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy - Exercise App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPW2YK8LqSI+3K+cOxD5nDaL0BjlSe7DTPbmmobJLDssH8MkWZWy7m7icvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" crossorigin src="/course-project-01/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/course-project-01/assets/styles-CZ96or_8.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Your Energy - Home">
+        <span class="nav-logo__text">Your Energy</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="layout">
+          <!-- Left Column - Quote -->
+          <aside class="sidebar sidebar--left">
+            <section class="quote-section">
+  <div class="quote-card">
+    <div class="quote-card__icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 21v-4a6 6 0 016-6h12a6 6 0 016 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="9" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="19" cy="9" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3 class="quote-card__title">Quote of the day</h3>
+    <blockquote class="quote-card__text" data-quote-text>Loading...</blockquote>
+    <p class="quote-card__author" data-quote-author>Author</p>
+  </div>
+</section>
+
+          </aside>
+
+          <!-- Main Content -->
+          <section class="main-section">
+            <!-- Filter Tabs -->
+            <section class="filters-section">
+  <div class="filter-tabs" data-filters>
+    <button class="filter-btn filter-btn--active" data-filter-btn data-filter-value="Muscles">
+      Muscles
+    </button>
+    <button class="filter-btn" data-filter-btn data-filter-value="Body parts">
+      Body parts
+    </button>
+    <button class="filter-btn" data-filter-btn data-filter-value="Equipment">
+      Equipment
+    </button>
+  </div>
+
+  <div class="category-filters" data-category-filters>
+    <!-- Dynamically filled with filter buttons -->
+  </div>
+</section>
+
+
+            <!-- Search -->
+            <section class="search-section">
+  <div class="search-container">
+    <input
+      type="text"
+      class="search-input"
+      data-search-input
+      placeholder="Search exercises by name..."
+      aria-label="Search exercises"
+    />
+    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+      <path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+
+            <!-- Exercises Catalog -->
+            <div class="exercises-section">
+              <div class="exercises-container" data-exercises></div>
+              <div class="pagination-container" data-pagination></div>
+            </div>
+          </section>
+
+          <!-- Right Column - Subscription -->
+          <aside class="sidebar sidebar--right">
+            <section class="subscription-section">
+  <div class="subscription-card">
+    <h3 class="subscription-card__title">Subscribe</h3>
+    <p class="subscription-card__description">Get updates on new exercises and tips</p>
+    
+    <form class="subscription-form" data-subscription-form>
+      <input
+        type="email"
+        class="subscription-form__input"
+        placeholder="Enter your email"
+        required
+        aria-label="Email address"
+      />
+      <button type="submit" class="subscription-form__btn">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Exercise Detail Modal -->
+    <div class="modal" data-modal aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__overlay">
+    <div class="modal__content" data-modal-content>
+      <!-- Content dynamically filled by JavaScript -->
+    </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy - Exercise App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPW2YK8LqSI+3K+cOxD5nDaL0BjlSe7DTPbmmobJLDssH8MkWZWy7m7icvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <load src="./partials/header.html" />
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="layout">
+          <!-- Left Column - Quote -->
+          <aside class="sidebar sidebar--left">
+            <load src="./partials/quote.html" />
+          </aside>
+
+          <!-- Main Content -->
+          <section class="main-section">
+            <!-- Filter Tabs -->
+            <load src="./partials/filters.html" />
+
+            <!-- Search -->
+            <load src="./partials/search.html" />
+
+            <!-- Exercises Catalog -->
+            <div class="exercises-section">
+              <div class="exercises-container" data-exercises></div>
+              <div class="pagination-container" data-pagination></div>
+            </div>
+          </section>
+
+          <!-- Right Column - Subscription -->
+          <aside class="sidebar sidebar--right">
+            <load src="./partials/subscription.html" />
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Exercise Detail Modal -->
+    <load src="./partials/modal-exercise.html" />
+
+    <!-- Footer -->
+    <load src="./partials/footer.html" />
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

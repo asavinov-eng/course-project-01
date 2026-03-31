@@ -1,0 +1,42 @@
+/* Notification Styles */
+
+.notification {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-notification);
+  transition: bottom var(--transition-base);
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: var(--font-weight-medium);
+}
+
+.notification--show {
+  bottom: var(--spacing-lg);
+}
+
+.notification--success {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.notification--error {
+  background-color: var(--color-error);
+  color: var(--color-white);
+}
+
+.notification--info {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.notification--warning {
+  background-color: var(--color-warning);
+  color: var(--color-white);
+}
